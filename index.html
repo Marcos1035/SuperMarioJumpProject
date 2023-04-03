@@ -1,0 +1,117 @@
+<html>
+  <head>
+    <title>Mario Jump</title>
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="./asset/css/style.css">
+    <!--Favicon-->
+    <link rel='shortcut icon' type='image/x-icon' href='./asset/images/mario_jump_right.png' />
+     <!--Fonte-->
+    <link href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Shade|Press+Start+2P" rel="stylesheet">
+    <!--js-->
+    <script type="application/javascript" src="./asset/lib/bundle.js"></script>
+  </head>
+   <body>
+    <!--Frame do jogo INICIO -->
+    <div class="main-frame">
+      <div class="mario-jump-frame">
+        <figure></figure>
+        <canvas id="mario-jump-canvas"></canvas>
+        <div id="game-default-page">
+          <h1 id="press-enter-key">Aperte ENTER para começar</h1>
+        </div>
+        <div id="game-score-page">
+          <div class="game-score">
+            <h3>SCORE</h3>
+            <h3 id="score">0</h3>
+          </div>
+          <div class="game-mushroom">
+            <img src="./asset/images/mushroom.gif"/>X<p id="ate-mushroom">0</p>
+          </div>
+          <div class="game-mute">
+            <h3>PLAYER</h3>
+            <h3>1P</h3>
+          </div>
+        </div>
+        <div id="game-over-page">
+          <h1>GAME OVER</h1>
+          <h3>Aperte ENTER para recomeçar</h3>
+        </div>
+      </div>
+<!--Frame do jogo FIM-->
+
+<!--Informações do jogo INICIO-->
+      <div class="information-frame">
+        <div class="how-to-play-frame">
+          <h2>* Como jogar *</h2>
+          <h3></h3>
+          <div>
+            <div>
+              <div>
+                <img src="./asset/images/key_left.gif" />
+                <img src="./asset/images/key_right.gif"/>
+              </div>
+              <h3>Pressione a tecla de seta para mudar de direção</h3>
+            </div>
+            <div>
+              <div>
+                <img src="./asset/images/mushroom.gif"/>
+              </div>
+              <h3>+20 pontos e Power Up!</h3>
+            </div>
+            <div>
+              <div>
+                <img src="./asset/images/goomba.png"/>
+              </div>
+              <h3>Game Over</h3>
+            </div>
+          </div>
+        </div>
+        <div class="button-mute-frame">
+          <h2>* Mudo / Com som *</h2>
+          <div>
+            <img src="./asset/images/mute.gif" id="button-mute"/>
+            <img src="./asset/images/unmute.gif" id="button-unmute"/>
+          <p> <= clique! </p>
+        </div>
+          <h3>ou Pressione 'M' para ativar/desativar o som</h3>
+        </div>
+        <div class="developer-info-frame">
+          <h2>* Informações do desenvolvedor *</h2>
+          <h3>Marcos de Oliveira Cordeiro</h3>
+          <a href="mailto: marcosoliveira1035@gmail.com" target="_blank" rel="external"><img src="./asset/images/mail.gif"/></a>
+          <a href="https://github.com/Marcos1035" target="_blank" rel="external"><img src="./asset/images/github.gif"/></a>
+          <a href="https://www.linkedin.com/in/marcos-de-oliveira-cordeiro-0b56201b7" target="_blank" rel="external"><img src="./asset/images/linkedin.gif"/></a>
+          <!--Informações do jogo FIM-->
+        </div>
+      </div>
+    </div>
+  <!--Imagens-->
+    <div class="images">
+      <img src="./asset/images/mario_jump_right.png" id="img-mario-jump-right" />
+      <img src="./asset/images/mario_jump_left.png" id="img-mario-jump-left" />
+      <img src="./asset/images/brick.png" id="img-brick" />
+      <img src="./asset/images/goomba.png" id="img-goomba" />
+      <img src="./asset/images/mushroom.gif" id="img-mushroom" />
+      <img src="./asset/images/cloud_single.gif" id="img-cloud-1" />
+      <img src="./asset/images/cloud_double.gif" id="img-cloud-2" />
+      <img src="./asset/images/cloud_triple.gif" id="img-cloud-3" />
+      <img src="./asset/images/mute.gif" id="img-mute" />
+      <img src="./asset/images/unmute.gif" id="img-unmute" />
+    </div>
+   <!--Imagens-->
+
+    <!--Som-->
+    <div class="bgms">
+      <audio src="./asset/som/bgm_opening.mp3" id="bgm_opening"></audio>
+      <audio src="./asset/som/bgm_gamestart.mp3" id="bgm_gamestart"></audio>
+      <audio src="./asset/som/bgm_gameover.wav" id="bgm_gameover"></audio>
+    </div>
+
+    <div class="sounds">
+      <audio src="./asset/som/" id="sound_enter"></audio>
+      <audio src="./asset/som/sound_jump.wav" id="sound_jump"></audio>
+      <audio src="./asset/som/sound_powerup.wav" id="sound_powerup"></audio>
+      <!--Som-->
+    </div>
+  </body>
+</html>
